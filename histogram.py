@@ -40,3 +40,23 @@ plt.xlabel("Age")
 plt.ylabel("no. of patients")
 plt.show()
 
+
+#task 4
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+data = {
+    "semester" : ['sem 1','sem 2'],
+    "hours_studied": [6,8]
+}
+df = pd.DataFrame(data)
+
+plt.figure(figsize=(8,6))
+sns.boxplot(x='semester',y='hours_studied',data=df)
+plt.title("Student performance: hours studies by semester")
+plt.xlabel("semester")
+plt.ylabel("hours studied")
+plt.show()
+
+
